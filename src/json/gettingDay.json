@@ -1,0 +1,37 @@
+[
+  {
+    "id": 0,
+    "name": "Minggu",
+    "value": "Min"
+  },
+  {
+    "id": 1,
+    "name": "Senin",
+    "value": "Sen"
+  },
+  {
+    "id": 2,
+    "name": "Selasa",
+    "value": "Sel"
+  },
+  {
+    "id": 3,
+    "name": "Rabu",
+    "value": "Rab"
+  },
+  {
+    "id": 4,
+    "name": "Kamis",
+    "value": "Kam"
+  },
+  {
+    "id": 5,
+    "name": "Jumat",
+    "value": "Jum"
+  },
+  {
+    "id": 6,
+    "name": "Sabtu",
+    "value": "Sab"
+  }
+]
