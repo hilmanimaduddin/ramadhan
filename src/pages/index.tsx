@@ -1,37 +1,62 @@
-import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
+"use client";
+
+import FallingLetter from "@/component/motion/FallingLetter";
+import FromLeft from "@/component/motion/FromLeft";
+import FromNone from "@/component/motion/FromNone";
+import SetCountdown from "@/component/setCountDown";
+import SetDate from "@/component/setDate";
+import SetImage from "@/component/setImage";
+import SetTime from "@/component/setTime";
 import { Box, Text } from "@chakra-ui/react";
+import { useState } from "react";
 
-const inter = Inter({ subsets: ["latin"] });
+export default function CreatePage() {
+  const [isLoading, setIsLoading] = useState(false);
 
-export default function Home() {
+  const handleCreateData = () => {
+    setIsLoading(true);
+  };
   return (
-    <>
+    <Box display="flex" justifyContent="center" alignItems="center">
       <Box
+        maxW="xl"
+        width="500px"
+        p={4}
         display={"flex"}
-        justifyContent={"center"}
-        alignItems={"center"}
         flexDir={"column"}
-        w={"100%"}
+        gap={4}
       >
-        <Text>test</Text>
-        <Text>test</Text>
-        <Box
-          border="1px solid red"
-          p={4}
-          m={4}
-          overflow="auto"
-          h="100px"
-          w="80%"
-          display={"flex"}
-          justifyContent={"center"}
-          alignItems={"center"}
-        >
-          <Text>test</Text>
+        <Box display="flex" justifyContent="space-between">
+          <FromLeft delay={1}>
+            <Box
+              bgColor={"#0a6c6c"}
+              color={"white"}
+              p={1}
+              paddingInline={2}
+              borderRadius={"md"}
+            >
+              <FallingLetter>
+                Assalamu 'alaikum, Sahabat Sesyurga...
+              </FallingLetter>
+            </Box>
+          </FromLeft>
+          <FromNone>
+            <SetTime />
+          </FromNone>
+        </Box>
+        <FromLeft delay={2}>
+          <SetDate />
+        </FromLeft>
+        <FromLeft delay={3}>
+          <SetImage />
+        </FromLeft>
+        <FromLeft delay={4}>
+          <SetCountdown />
+        </FromLeft>
+        <Box display={"flex"} justifyContent={"center"} p={4}>
+          <Text>By Extrarea</Text>
         </Box>
       </Box>
-    </>
+    </Box>
   );
 }

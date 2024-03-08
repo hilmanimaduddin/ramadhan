@@ -40,10 +40,7 @@ export default function SetDate() {
 
   return (
     <Box>
-      {/* <Text>
-        {gettingDate[day2].name}, {date2} {gettingMonth[month2].name} {year2}
-      </Text> */}
-      <Box shadow={"dark-lg"} p="6" rounded="lg" bg="white">
+      <Box shadow={"dark-lg"} p={2} rounded="lg" bg="white">
         <Text pt={2} paddingInline={2}>
           {gettingDate[day].name}, {date} {gettingMonth[month].name} {year}
         </Text>
@@ -53,9 +50,14 @@ export default function SetDate() {
           width="100%"
           textAlign={"center"}
           alignItems="center"
-          p={2}
+          p={1}
         >
-          <Box borderBottom={day == 0 ? "2px solid black" : "none"}>
+          <Box
+            borderBottom={day == 0 ? "2px solid black" : "none"}
+            shadow={day === 0 ? "rgba(0, 0, 0, 0.5)" : "none"}
+            borderRadius={"lg"}
+            p={2}
+          >
             <Text>Min</Text>
             <Text>
               {date - (day - gettingDate[0].id) < 1
@@ -63,7 +65,12 @@ export default function SetDate() {
                 : date - (day - gettingDate[0].id)}
             </Text>
           </Box>
-          <Box borderBottom={day == 1 ? "2px solid black" : "none"}>
+          <Box
+            borderBottom={day == 1 ? "2px solid black" : "none"}
+            shadow={day == 1 ? "inner" : "none"}
+            borderRadius={"lg"}
+            p={2}
+          >
             <Text>Sen</Text>
             <Text>
               {date - (day - gettingDate[1].id) < 1
@@ -71,7 +78,12 @@ export default function SetDate() {
                 : date - (day - gettingDate[1].id)}
             </Text>
           </Box>
-          <Box borderBottom={day == 2 ? "2px solid black" : "none"}>
+          <Box
+            borderBottom={day == 2 ? "2px solid black" : "none"}
+            shadow={day == 2 ? "inner" : "none"}
+            borderRadius={"lg"}
+            p={2}
+          >
             <Text>Sel</Text>
             <Text>
               {date - (day - gettingDate[2].id) < 1
@@ -79,7 +91,12 @@ export default function SetDate() {
                 : date - (day - gettingDate[2].id)}
             </Text>
           </Box>
-          <Box borderBottom={day == 3 ? "2px solid black" : "none"}>
+          <Box
+            borderBottom={day == 3 ? "2px solid black" : "none"}
+            shadow={day == 3 ? "inner" : "none"}
+            borderRadius={"lg"}
+            p={2}
+          >
             <Text>Rab</Text>
             <Text>
               {date - (day - gettingDate[3].id) < 1
@@ -87,7 +104,12 @@ export default function SetDate() {
                 : date - (day - gettingDate[3].id)}
             </Text>
           </Box>
-          <Box borderBottom={day == 4 ? "3px solid black" : "none"}>
+          <Box
+            borderBottom={day == 4 ? "3px solid black" : "none"}
+            shadow={day == 4 ? "inner" : "none"}
+            borderRadius={"lg"}
+            p={2}
+          >
             <Text>Kam</Text>
             <Text>
               {date - (day - gettingDate[4].id) < 1
@@ -95,7 +117,12 @@ export default function SetDate() {
                 : date - (day - gettingDate[4].id)}
             </Text>
           </Box>
-          <Box borderBottom={day == 5 ? "2px solid black" : "none"}>
+          <Box
+            borderBottom={day == 5 ? "2px solid black" : "none"}
+            shadow={day === 5 ? "inner" : "none"}
+            borderRadius={"lg"}
+            p={2}
+          >
             <Text>Jum</Text>
             <Text>
               {date - (day - gettingDate[5].id) < 1
@@ -103,7 +130,12 @@ export default function SetDate() {
                 : date - (day - gettingDate[5].id)}
             </Text>
           </Box>
-          <Box borderBottom={day == 6 ? "2px solid black" : "none"}>
+          <Box
+            borderBottom={day == 6 ? "2px solid black" : "none"}
+            shadow={day == 6 ? "inner" : "none"}
+            borderRadius={"lg"}
+            p={2}
+          >
             <Text>Sab</Text>
             <Text>
               {date - (day - gettingDate[6].id) < 1

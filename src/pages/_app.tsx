@@ -1,6 +1,14 @@
 import { ChakraProvider } from "@chakra-ui/react";
 import Head from "next/head";
 import { ComponentType } from "react";
+import { extendTheme } from "@chakra-ui/react";
+
+const theme = extendTheme({
+  fonts: {
+    body: "Madimi One, sans-serif",
+    heading: "Georgia, serif",
+  },
+});
 
 function MyApp({
   Component,
@@ -10,11 +18,21 @@ function MyApp({
   pageProps: any;
 }) {
   return (
-    <ChakraProvider>
+    <ChakraProvider theme={theme}>
       <Head>
         <title>Ramadhan</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com"></link>
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        ></link>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Sedgwick+Ave+Display&display=swap"
+          rel="stylesheet"
+        ></link>
       </Head>
       <Component {...pageProps} />
     </ChakraProvider>

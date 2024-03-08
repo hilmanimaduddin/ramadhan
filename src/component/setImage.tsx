@@ -1,16 +1,15 @@
-import { Box, Image, Text } from "@chakra-ui/react";
+import { Box, Image } from "@chakra-ui/react";
 
 export default function SetImage() {
   return (
     <Box
       display={"flex"}
       flexDirection={"column"}
-      p={4}
+      p={5}
       shadow={"dark-lg"}
       borderRadius={"lg"}
     >
       <Image borderRadius={"lg"} src="/ramadhan-image.jpg" alt="coba" />
-      <Text>Tesss</Text>
     </Box>
   );
 }
