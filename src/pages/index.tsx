@@ -36,7 +36,7 @@ export default function CreatePage() {
               borderRadius={"md"}
             >
               <FallingLetter>
-                Assalamu 'alaikum, Sahabat Sesyurga...
+                Assalamu alaikum, Sahabat Sesyurga...
               </FallingLetter>
             </Box>
           </FromLeft>
