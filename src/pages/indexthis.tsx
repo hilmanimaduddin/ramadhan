@@ -54,7 +54,7 @@ export default function CreatePage() {
           <SetCountdown />
         </FromLeft>
         <Box display={"flex"} justifyContent={"center"} p={4}>
-          <Text>By Extrarea</Text>
+          <Text>By Phaethoel</Text>
         </Box>
       </Box>
     </Box>
