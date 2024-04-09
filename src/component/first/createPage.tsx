@@ -3,10 +3,10 @@
 import FallingLetter from "@/component/motion/FallingLetter";
 import FromLeft from "@/component/motion/FromLeft";
 import FromNone from "@/component/motion/FromNone";
-import SetCountdown from "@/component/setCountDown";
-import SetDate from "@/component/setDate";
-import SetImage from "@/component/setImage";
-import SetTime from "@/component/setTime";
+import SetCountdown from "@/component/first/setCountDown";
+import SetDate from "@/component/first/setDate";
+import SetImage from "@/component/first/setImage";
+import SetTime from "@/component/first/setTime";
 import { Box, Text } from "@chakra-ui/react";
 import { useState } from "react";
 

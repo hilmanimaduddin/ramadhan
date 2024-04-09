@@ -1,7 +1,7 @@
 import { Box, Text } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
-import gettingDate from "../json/gettingDay.json";
-import gettingMonth from "../json/gettingMonth.json";
+import gettingDate from "../../json/gettingDay.json";
+import gettingMonth from "../../json/gettingMonth.json";
 
 export default function SetDate() {
   const [getDay, setDay] = useState("");

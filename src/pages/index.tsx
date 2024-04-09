@@ -1,6 +1,6 @@
 import { Box, Button, Text } from "@chakra-ui/react";
 import { useRef, useState } from "react";
-import CreatePage from "./indexthis";
+import CreatePage from "../component/first/createPage";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay, faPause } from "@fortawesome/free-solid-svg-icons";
 

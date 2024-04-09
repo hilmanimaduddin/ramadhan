@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { Box, Text } from "@chakra-ui/react";
-import FallingLetter from "./motion/FallingLetter";
+import FallingLetter from "../motion/FallingLetter";
 
 const SetCountdown = () => {
   const [timeLeft, setTimeLeft] = useState<number>(0);
@@ -41,7 +41,7 @@ const SetCountdown = () => {
         justifyContent={"center"}
         alignItems={"center"}
       >
-        <FallingLetter delay={4}>Menuju Bulan Ramadhan</FallingLetter>
+        <FallingLetter delay={4}>Menuju Lebaran</FallingLetter>
         <FallingLetter delay={6}>yang penuh berkah</FallingLetter>
       </Box>
       <Box display={"flex"} justifyContent={"space-between"} p={2}>
