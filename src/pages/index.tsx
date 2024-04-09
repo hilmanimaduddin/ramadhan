@@ -63,7 +63,7 @@ function AudioPlayer() {
             Mulai
           </Button>
           <Text style={{ position: "fixed", bottom: 20, zIndex: 100 }}>
-            By Extrarea
+            By Phaethoel
           </Text>
         </Box>
       )}
